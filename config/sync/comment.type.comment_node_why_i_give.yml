@@ -1,0 +1,8 @@
+uuid: 63be5bc8-84fc-4233-8d67-d2c1a28d757b
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_why_i_give
+label: 'Why I Give comment'
+target_entity_type_id: node
+description: null

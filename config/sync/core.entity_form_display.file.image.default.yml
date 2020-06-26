@@ -1,0 +1,49 @@
+uuid: 9e94f80d-a80e-4cdf-bd03-dc52eb27cc2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.file.image.field_caption
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_title_text
+    - field.field.file.image.field_photo_credit
+  module:
+    - file
+id: file.image.default
+targetEntityType: file
+bundle: image
+mode: default
+content:
+  field_caption:
+    weight: -2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_file_image_alt_text:
+    weight: -4
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_file_image_title_text:
+    weight: -3
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_photo_credit:
+    weight: -1
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

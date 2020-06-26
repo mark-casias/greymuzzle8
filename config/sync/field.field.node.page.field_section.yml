@@ -1,0 +1,41 @@
+uuid: 58129c70-9c77-4c38-9832-048df2f35f3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.page
+  module:
+    - entity_reference_revisions
+id: node.page.field_section
+field_name: field_section
+entity_type: node
+bundle: page
+label: Section
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      '50_50':
+        weight: 6
+        enabled: false
+      faq_questions:
+        weight: 7
+        enabled: false
+      from_library:
+        weight: 8
+        enabled: false
+      full_text:
+        weight: 9
+        enabled: false
+      view:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

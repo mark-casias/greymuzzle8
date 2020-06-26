@@ -1,0 +1,36 @@
+uuid: 48d208e4-df5d-4033-b5c0-c70932b41c03
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.file.basic_page_320x240_right
+    - field.field.file.image.field_caption
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_title_text
+    - field.field.file.image.field_photo_credit
+  module:
+    - file
+id: file.image.basic_page_320x240_right
+targetEntityType: file
+bundle: image
+mode: basic_page_320x240_right
+content:
+  field_caption:
+    label: hidden
+    weight: 2
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_photo_credit:
+    label: inline
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_file_image_alt_text: true
+  field_file_image_title_text: true

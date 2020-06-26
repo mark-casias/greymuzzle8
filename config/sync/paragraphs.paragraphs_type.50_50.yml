@@ -1,0 +1,15 @@
+uuid: bc87126f-9de5-4dd5-a8a2-03bf37155c1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: '50_50'
+label: '50 / 50'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

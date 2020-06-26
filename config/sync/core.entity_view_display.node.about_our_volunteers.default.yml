@@ -1,0 +1,29 @@
+uuid: aa89b0d6-32a1-4c24-9107-e0556ae0b3eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_our_volunteers.body
+    - node.type.about_our_volunteers
+  module:
+    - text
+    - user
+id: node.about_our_volunteers.default
+targetEntityType: node
+bundle: about_our_volunteers
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

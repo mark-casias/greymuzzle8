@@ -1,0 +1,170 @@
+uuid: cb94d500-883e-435c-95c1-269a2cb6600a
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_senior_spotlights
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node revisions (Senior Spotlights)'
+source:
+  plugin: d7_node_revision
+  node_type: senior_spotlights
+process:
+  nid:
+    -
+      plugin: get
+      source: nid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_senior_spotlights/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_ss_dog_age:
+    -
+      plugin: get
+      source: field_ss_dog_age
+  field_ss_dog_breed:
+    -
+      plugin: get
+      source: field_ss_dog_breed
+  field_ss_dog_fee:
+    -
+      plugin: get
+      source: field_ss_dog_fee
+  field_ss_dog_home_pref:
+    -
+      plugin: get
+      source: field_ss_dog_home_pref
+  field_ss_dog_link:
+    -
+      plugin: field_link
+      source: field_ss_dog_link
+  field_ss_dog_out_of_area:
+    -
+      plugin: get
+      source: field_ss_dog_out_of_area
+  field_ss_dog_reason:
+    -
+      plugin: get
+      source: field_ss_dog_reason
+  field_ss_dog_sex:
+    -
+      plugin: get
+      source: field_ss_dog_sex
+  field_ss_dog_weight:
+    -
+      plugin: get
+      source: field_ss_dog_weight
+  field_ss_org_contact_name:
+    -
+      plugin: get
+      source: field_ss_org_contact_name
+  field_ss_org_email:
+    -
+      plugin: sub_process
+      source: field_ss_org_email
+      process:
+        value: email
+  field_ss_org_name:
+    -
+      plugin: get
+      source: field_ss_org_name
+  field_ss_org_website:
+    -
+      plugin: field_link
+      source: field_ss_org_website
+  field_ss_photos:
+    -
+      plugin: sub_process
+      source: field_ss_photos
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_ss_youtube:
+    -
+      plugin: get
+      source: field_ss_youtube
+  field_ss_is_adopted:
+    -
+      plugin: get
+      source: field_ss_is_adopted
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: senior_spotlights
+migration_dependencies:
+  required:
+    - upgrade_d7_node_about_our_volunteers
+    - upgrade_d7_node_always_in_my_heart
+    - upgrade_d7_node_article
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_faqs
+    - upgrade_d7_node_meet_the_dogs
+    - upgrade_d7_node_news
+    - upgrade_d7_node_organizations
+    - upgrade_d7_node_our_volunteers
+    - upgrade_d7_node_page
+    - upgrade_d7_node_senior_spotlights
+    - upgrade_d7_node_staff
+    - upgrade_d7_node_webform
+    - upgrade_d7_node_why_i_give
+  optional: {  }

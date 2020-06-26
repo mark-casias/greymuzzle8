@@ -1,0 +1,8 @@
+uuid: 0e98ed1a-d77c-4d38-9c79-35db6e2ac52e
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_senior_spotlights
+label: 'Senior Spotlights comment'
+target_entity_type_id: node
+description: null

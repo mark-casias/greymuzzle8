@@ -1,0 +1,16 @@
+uuid: 22278831-bc9a-4cc0-b825-cf8accc0d917
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main-menu:0:'
+name: 'Always in my heart'
+type: always_in_my_heart
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

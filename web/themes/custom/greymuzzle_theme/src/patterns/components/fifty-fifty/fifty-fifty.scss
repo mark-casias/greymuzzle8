@@ -1,0 +1,112 @@
+// Fifty-Fifty block.
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.fifty-fifty {
+  margin: 0 auto;
+  padding: 20px 20px 50px;
+  position: relative;
+
+  @include breakpoint($bp-sm) {
+    max-width: 600px;
+  }
+
+  @include breakpoint($bp-md) {
+    max-width: 800px;
+  }
+
+  @include breakpoint($bp-lg) {
+    max-width: 1055px;
+  }
+}
+
+.fifty-fifty__title {
+  text-align: center;
+}
+
+.fifty-fifty__content {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($bp-md) {
+    flex-direction: row;
+    &.right {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.fifty-fifty__caption {
+  max-width: 100%;
+  margin-bottom: 2rem;
+  @include breakpoint($bp-md) {
+    margin-bottom: 0;
+    max-width: 50%;
+  }
+}
+
+/*
+.featured {
+  h2 {
+    margin-bottom: 0;
+    text-align: center;
+    padding-left: 0;
+  }
+  img {
+    margin: 0 5px;
+  }
+  clear:both;
+}
+
+.right {
+  width: 100%;
+  float: right;
+  text-align: center;
+  @include breakpoint($bp-medium) {
+    width: 48%;
+    text-align: left;
+  }
+}
+
+.media-youtube-video {
+  position: relative;
+  border: 1px solid color(black);
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 30px;
+  clear: both;
+
+  @include breakpoint($bp-medium) {
+    width: 49%;
+    float: left;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 25px;
+    clear: none;
+  }
+
+  iframe {
+    min-height: 310px;
+    height: auto;
+
+    @include breakpoint($bp-medium) {
+      min-height: 250px;
+    }
+  }
+}
+
+.transcript {
+  position: absolute;
+  left: 20px;
+  font-size: 0.75em;
+  bottom: 50px;
+
+  @include breakpoint($bp-medium) {
+    bottom: -260px;
+    position: relative;
+    left: 0;
+  }
+}
+*/

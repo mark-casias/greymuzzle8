@@ -1,0 +1,10 @@
+uuid: d26ce15e-6f52-4a18-9cea-f273fa74a1af
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file.basic_page_220x220
+label: basic_page_220x220
+targetEntityType: file
+cache: true

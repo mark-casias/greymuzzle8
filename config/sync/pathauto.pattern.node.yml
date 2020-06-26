@@ -1,0 +1,14 @@
+uuid: ba355f35-0c6f-452b-b24e-65a737a9f7e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node
+label: 'Content - default'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

@@ -1,0 +1,8 @@
+uuid: 70cb4179-2a2d-4c7d-8368-b10a573e1588
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_always_in_my_heart
+label: 'Always in my heart comment'
+target_entity_type_id: node
+description: null

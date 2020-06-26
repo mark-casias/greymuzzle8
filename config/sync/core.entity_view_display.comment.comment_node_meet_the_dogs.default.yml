@@ -1,0 +1,28 @@
+uuid: e80c4259-4fa5-4d19-b58d-982129c3160b
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_meet_the_dogs
+    - field.field.comment.comment_node_meet_the_dogs.comment_body
+  module:
+    - text
+id: comment.comment_node_meet_the_dogs.default
+targetEntityType: comment
+bundle: comment_node_meet_the_dogs
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

@@ -1,0 +1,21 @@
+uuid: 26377f5d-ac2a-4109-9ae6-9e9dfaafabc6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_staff
+label: 'Content - Staff'
+type: 'canonical_entities:node'
+pattern: 'about-us/who-we-are/[node:title]'
+selection_criteria:
+  -
+    id: node_type
+    bundles:
+      staff: staff
+    negate: false
+    context_mapping:
+      node: node
+selection_logic: and
+weight: 0
+relationships: {  }

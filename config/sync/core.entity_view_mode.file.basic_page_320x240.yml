@@ -1,0 +1,10 @@
+uuid: c81232b8-341b-4345-b2cf-42232c75147e
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file.basic_page_320x240
+label: basic_page_320x240
+targetEntityType: file
+cache: true

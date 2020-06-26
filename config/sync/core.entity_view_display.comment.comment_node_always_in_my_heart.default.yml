@@ -1,0 +1,28 @@
+uuid: 3faa9753-e81e-49e1-bb33-3874cd88f090
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_always_in_my_heart
+    - field.field.comment.comment_node_always_in_my_heart.comment_body
+  module:
+    - text
+id: comment.comment_node_always_in_my_heart.default
+targetEntityType: comment
+bundle: comment_node_always_in_my_heart
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

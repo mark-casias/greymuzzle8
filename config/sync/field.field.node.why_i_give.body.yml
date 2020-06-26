@@ -1,0 +1,23 @@
+uuid: 57720d3c-2132-4957-a7be-fa323ebd79de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.why_i_give
+  module:
+    - text
+id: node.why_i_give.body
+field_name: body
+entity_type: node
+bundle: why_i_give
+label: 'Why I Give'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

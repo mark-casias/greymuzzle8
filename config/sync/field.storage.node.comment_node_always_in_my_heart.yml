@@ -1,0 +1,20 @@
+uuid: dfa2c1ee-b53d-4861-8263-9bd5fa5ded77
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_always_in_my_heart
+field_name: comment_node_always_in_my_heart
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_always_in_my_heart
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

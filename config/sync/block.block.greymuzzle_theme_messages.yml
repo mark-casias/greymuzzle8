@@ -1,0 +1,22 @@
+uuid: 77040eea-6f66-4540-90ab-ad9237af9399
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - greymuzzle_theme
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: greymuzzle_theme_messages
+theme: greymuzzle_theme
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

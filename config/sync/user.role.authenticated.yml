@@ -1,0 +1,21 @@
+uuid: a523d2f5-ca7a-41e0-9b72-9377692fee56
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'create files'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use advanced search'
+  - 'view files'
+  - 'view media'
+  - 'view own files'
+  - 'view own private files'
+  - 'view own unpublished content'

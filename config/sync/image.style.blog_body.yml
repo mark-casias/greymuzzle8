@@ -1,0 +1,15 @@
+uuid: 12f7f5cf-7e34-458d-987d-337f3c30bc4b
+langcode: en
+status: true
+dependencies: {  }
+name: blog_body
+label: 'Blog Body'
+effects:
+  43025d69-f21a-4242-9cb6-bedd882b7ce7:
+    uuid: 43025d69-f21a-4242-9cb6-bedd882b7ce7
+    id: image_scale
+    weight: 1
+    data:
+      width: 425
+      height: null
+      upscale: false

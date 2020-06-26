@@ -1,0 +1,33 @@
+uuid: f300acea-3dbf-4b8c-9c2e-49668e27f94c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_volunteer_image
+    - node.type.our_volunteers
+  module:
+    - image
+id: node.our_volunteers.field_volunteer_image
+field_name: field_volunteer_image
+entity_type: node
+bundle: our_volunteers
+label: 'Volunteer Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  file_directory: ''
+  max_filesize: ''
+  alt_field: false
+  title_field: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image: 0
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

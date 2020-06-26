@@ -1,0 +1,8 @@
+uuid: 59e6ffbb-4f61-4485-b696-844a280711c7
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_staff
+label: 'Staff comment'
+target_entity_type_id: node
+description: null

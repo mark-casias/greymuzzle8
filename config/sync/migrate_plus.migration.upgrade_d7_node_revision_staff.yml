@@ -1,0 +1,126 @@
+uuid: ab3cfb79-e217-4dce-b85a-5e46f5c894ad
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_staff
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node revisions (Staff)'
+source:
+  plugin: d7_node_revision
+  node_type: staff
+process:
+  nid:
+    -
+      plugin: get
+      source: nid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_staff/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_staff_email:
+    -
+      plugin: sub_process
+      source: field_staff_email
+      process:
+        value: email
+  field_staff_image:
+    -
+      plugin: sub_process
+      source: field_staff_image
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_staff_position_type:
+    -
+      plugin: get
+      source: field_staff_position_type
+  field_staff_title:
+    -
+      plugin: get
+      source: field_staff_title
+  field_staff_website:
+    -
+      plugin: field_link
+      source: field_staff_website
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: staff
+migration_dependencies:
+  required:
+    - upgrade_d7_node_about_our_volunteers
+    - upgrade_d7_node_always_in_my_heart
+    - upgrade_d7_node_article
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_faqs
+    - upgrade_d7_node_meet_the_dogs
+    - upgrade_d7_node_news
+    - upgrade_d7_node_organizations
+    - upgrade_d7_node_our_volunteers
+    - upgrade_d7_node_page
+    - upgrade_d7_node_senior_spotlights
+    - upgrade_d7_node_staff
+    - upgrade_d7_node_webform
+    - upgrade_d7_node_why_i_give
+  optional: {  }

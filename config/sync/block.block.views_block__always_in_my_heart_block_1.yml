@@ -1,0 +1,24 @@
+uuid: d3884856-7c53-4432-a852-8289e9d1d495
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.always_in_my_heart
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__always_in_my_heart_block_1
+theme: bartik
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'views_block:always_in_my_heart-block_1'
+settings:
+  id: 'views_block:always_in_my_heart-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

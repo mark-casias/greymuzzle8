@@ -1,0 +1,23 @@
+uuid: 5e4d1e1c-ac6a-48f5-92cf-6e610a7e0306
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ss_dog_link
+    - node.type.senior_spotlights
+  module:
+    - link
+id: node.senior_spotlights.field_ss_dog_link
+field_name: field_ss_dog_link
+entity_type: node
+bundle: senior_spotlights
+label: 'Link to profile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

@@ -1,0 +1,33 @@
+uuid: 9fa034a3-faa5-4592-802e-7778e7019fa9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.blog
+  module:
+    - image
+id: node.blog.field_image
+field_name: field_image
+entity_type: node
+bundle: blog
+label: 'Lead Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  alt_field: false
+  default_image: 0
+  file_directory: blogs/images
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  title_field: false
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

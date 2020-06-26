@@ -1,0 +1,53 @@
+{{ attach_library('greymuzzle_theme/hero') }}
+
+<div class="hero {{ modifier }}" {{ extra_attributes }}>
+  {{ title_prefix }}
+
+  {# Media could be an image or video. #}
+  {% if image %}
+    <div class="hero__media">
+      {%
+        include '@greymuzzle_theme/media-item/media-item.twig' with {
+          "image": image
+        } only
+      %}
+    </div>
+  {% elseif video %}
+    <div class="hero__media">
+      {%
+        include '@greymuzzle_theme/media-item/media-item.twig' with {
+          "video": video
+        } only
+      %}
+    </div>
+  {% endif %}
+
+  <div class="hero__content">
+    {% if title %}
+      <div class="hero__heading">
+        {%
+          include '@greymuzzle_theme/heading/heading.twig' with {
+            "title": title,
+            "heading_level": heading_level,
+            "modifier": "hero__heading"
+          } only
+        %}
+      </div>
+    {% endif %}
+
+    {% if body %}
+      <div class="hero__body">
+        {{ body }}
+      </div>
+    {% endif %}
+
+    {% if button_text %}
+      {%
+        include '@greymuzzle_theme/button/button.twig' with {
+          "text": button_text,
+          "url": url
+        } only
+      %}
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,10 @@
+uuid: 088883c0-8da2-46e6-ac67-e9d3a6970a23
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file.100x100_scaled_cropped
+label: 100x100_scaled_cropped
+targetEntityType: file
+cache: true

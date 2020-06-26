@@ -1,0 +1,8 @@
+uuid: 2687c3fc-8d78-4985-b638-45d37725148c
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_organizations
+label: 'Organizations comment'
+target_entity_type_id: node
+description: null

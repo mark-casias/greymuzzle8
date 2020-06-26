@@ -1,0 +1,18 @@
+uuid: 72b76940-a0aa-4450-ac2b-fa968aac15ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.meet_the_dogs
+id: node.meet_the_dogs.title
+field_name: title
+entity_type: node
+bundle: meet_the_dogs
+label: 'Dog''s name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

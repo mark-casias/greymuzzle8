@@ -1,0 +1,110 @@
+uuid: ff294f0b-bd72-4f2b-891d-1dc73210259f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_organizations.default
+    - field.field.node.organizations.body
+    - field.field.node.organizations.comment_node_organizations
+    - field.field.node.organizations.field_org_dog_s_name
+    - field.field.node.organizations.field_org_funded
+    - field.field.node.organizations.field_org_how_we_help
+    - field.field.node.organizations.field_org_image
+    - field.field.node.organizations.field_org_website
+    - field.field.node.organizations.field_related_meet_the_dog
+    - field.field.node.organizations.field_state
+    - node.type.organizations
+  module:
+    - comment
+    - image
+    - link
+    - text
+    - user
+id: node.organizations.default
+targetEntityType: node
+bundle: organizations
+mode: default
+content:
+  body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_organizations:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_org_dog_s_name:
+    label: above
+    weight: 5
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_org_funded:
+    label: above
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_org_how_we_help:
+    label: above
+    weight: 2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_org_image:
+    label: above
+    weight: 7
+    type: image
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    region: content
+  field_org_website:
+    label: above
+    weight: 3
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_related_meet_the_dog:
+    label: above
+    weight: 6
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_state:
+    label: above
+    weight: 4
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

@@ -1,0 +1,8 @@
+uuid: b2609ec8-0c54-4290-a0b6-9d94b3e63e52
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_our_volunteers
+label: 'Our Volunteers comment'
+target_entity_type_id: node
+description: null

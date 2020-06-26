@@ -1,0 +1,16 @@
+uuid: 49d54eb4-6737-4942-8793-3f477eefaeef
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'search content'
+  - 'use advanced search'
+  - 'view files'
+  - 'view media'

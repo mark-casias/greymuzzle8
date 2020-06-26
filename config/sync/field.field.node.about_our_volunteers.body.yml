@@ -1,0 +1,23 @@
+uuid: c85d9472-f4a5-4639-a6c4-d08797e78243
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.about_our_volunteers
+  module:
+    - text
+id: node.about_our_volunteers.body
+field_name: body
+entity_type: node
+bundle: about_our_volunteers
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

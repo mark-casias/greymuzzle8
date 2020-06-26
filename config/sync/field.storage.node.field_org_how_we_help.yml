@@ -1,0 +1,19 @@
+uuid: 997b0343-3200-4603-9744-b5c00adccd7f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_org_how_we_help
+field_name: field_org_how_we_help
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

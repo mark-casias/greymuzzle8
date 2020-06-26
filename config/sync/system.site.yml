@@ -1,0 +1,14 @@
+uuid: aa1ed45b-e632-4f7a-87a0-9794d8374be7
+name: 'The Grey Muzzle Organization'
+mail: info@greymuzzle.org
+slogan: ''
+page:
+  403: /
+  404: /
+  front: /home
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

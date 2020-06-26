@@ -1,0 +1,25 @@
+uuid: 3166d77b-d2ce-49d9-8c81-5ece25721fbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.full_text.field_content
+    - paragraphs.paragraphs_type.full_text
+  module:
+    - text
+id: paragraph.full_text.default
+targetEntityType: paragraph
+bundle: full_text
+mode: default
+content:
+  field_content:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

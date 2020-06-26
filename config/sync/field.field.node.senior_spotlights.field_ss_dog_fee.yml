@@ -1,0 +1,19 @@
+uuid: 02756daf-e8d7-4271-ab31-b114adb185dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ss_dog_fee
+    - node.type.senior_spotlights
+id: node.senior_spotlights.field_ss_dog_fee
+field_name: field_ss_dog_fee
+entity_type: node
+bundle: senior_spotlights
+label: 'Adoption Fee'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,36 @@
+uuid: 91f1677d-b9f7-4677-a75e-46a9b88e3b35
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_always_in_my_heart
+    - field.field.comment.comment_node_always_in_my_heart.comment_body
+  module:
+    - text
+id: comment.comment_node_always_in_my_heart.default
+targetEntityType: comment
+bundle: comment_node_always_in_my_heart
+mode: default
+content:
+  author:
+    weight: -2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_body:
+    weight: 0
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  subject:
+    type: string_textfield
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

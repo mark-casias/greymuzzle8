@@ -1,0 +1,17 @@
+<div class="fifty-fifty {{ modifier }}" {{ extra_attributes }}>
+    {#
+    Optional: Pass in Drupal specific functionality.
+    Note that this is mostly relevant to nodes and blocks.
+  #}
+  {#
+    {{ title_prefix }}
+    {{ title_suffix }}
+  #}
+  <h2 class="fifty-fifty__title">{{ title }}</h2>
+  <div class="fifty-fifty__content">
+    <div class="fifty-fifty__caption">{{body}}</div>
+    <div class="fifty-fifty__media">
+      {{ media }}
+    </div>
+  </div>
+</div>
